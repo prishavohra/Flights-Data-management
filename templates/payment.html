@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/payment.css') }}">
+
+        
+        <form method="POST">
+            <label for="payment_method">Select Payment Method:</label><br>
+            <input type="radio" id="upi" name="payment_method" value="UPI">
+            <label for="upi">UPI</label><br>
+            <input type="radio" id="credit_card" name="payment_method" value="Credit Card">
+            <label for="credit_card">Credit Card</label><br>
+            <input type="radio" id="net_banking" name="payment_method" value="Net Banking">
+            <label for="net_banking">Net Banking</label><br>
+            <input type="radio" id="other" name="payment_method" value="Other">
+            <label for="other">Other</label><br><br>
+
+            <button type="submit">Confirm Payment</button>
+        </form>
+    </div>
+{% endblock %}

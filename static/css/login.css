@@ -1,0 +1,90 @@
+/* Center the content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* Light gray background */
+}
+
+.heading {
+    font-size: 36px; /* Bigger font size */
+    font-family: 'Arial Black', sans-serif; /* More appealing font */
+    color: #333; /* Dark gray text */
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: #b3b2b2; /* Off-white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Width relative to parent */
+    max-width: 300px; /* Max width of the container */
+    margin: 0 auto; /* Horizontally center the container */
+}
+
+/* Image container without square background */
+.image-container {
+    margin-bottom: 20px; /* Space between the image and the form */
+    text-align: center; /* Center the image */
+}
+
+/* Make the logo smaller */
+#logo-image {
+    width: 180px;  /* Adjust size of the image */
+    height: auto;
+}
+
+/* Heading text in the container */
+h2 {
+    color: #333; /* Dark gray text */
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 20px; /* Space between heading and form */
+}
+
+/* Flex layout for form elements to ensure equal spacing */
+form {
+    display: flex;
+    flex-direction: column;  /* Stack the inputs vertically */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center;  /* Center the form elements */
+}
+
+/* Style the inputs and button */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bbb; /* Light gray border */
+    border-radius: 4px;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark gray text */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    max-width: 280px; /* Limit max width for better centering */
+}
+
+/* Style the button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 280px; /* Ensure the button is same width as inputs */
+}
+
+button:hover {
+    background-color: #555; /* Medium gray background */
+}
+
+.error-message {
+    color: #d9534f; /* Red for error message */
+    margin: 10px 0;
+}

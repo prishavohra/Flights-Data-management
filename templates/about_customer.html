@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about_customer.css') }}">
+
+    <h1>About Customer</h1>
+    <table>
+        <tr>
+            <th>Customer ID</th>
+            <td>{{ customer[0] }}</td>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <td>{{ customer[1] }}</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>{{ customer[2] }}</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>{{ customer[3] }}</td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td>{{ customer[4] }}</td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td>{{ customer[5] }}</td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <td>{{ customer[6] }}</td>
+        </tr>
+        <tr>
+            <th>Postal Code</th>
+            <td>{{ customer[7] }}</td>
+        </tr>
+        <tr>
+            <th>Customer Type</th>
+            <td>{{ customer[8] }}</td>
+        </tr>
+        <tr>
+            <th>Loyalty Points</th>
+            <td>{{ customer[9] }}</td>
+        </tr>
+    </table>
+{% endblock %}

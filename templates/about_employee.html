@@ -1,0 +1,16 @@
+{% extends "base_employee.html" %}
+{% block content %}
+<h2>About Employee</h2>
+
+<div class="employee-info">
+    <ul>
+        <li><strong>Employee ID:</strong> {{ employee[0] }}</li>
+        <li><strong>Name:</strong> {{ employee[1] }}</li>
+        <li><strong>Role:</strong> {{ employee[2] }}</li>
+        <li><strong>Department:</strong> {{ employee[3] }}</li>
+        <li><strong>Benefits:</strong> {{ employee[4] }}</li>
+    </ul>
+</div>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about_employee.css') }}">
+{% endblock %}

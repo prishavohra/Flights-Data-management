@@ -1,0 +1,64 @@
+/* Base styles for the dashboard */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #b9cbff, #6488ac);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #6488ac;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px; /* Limit the width of the content */
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    width: 100%;
+    background-color: #2f3e4e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

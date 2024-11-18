@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/employee_base.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('view_all_schedules') }}">View All Schedules</a></li>
+                <li><a href="{{ url_for('view_personal_schedule') }}">View Personal Schedule</a></li>
+                <li><a href="{{ url_for('about_employee') }}">About Employee</a></li>
+                <li><a href="{{ url_for('logout_employee') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Company Name</p>
+    </footer>
+</body>
+</html>

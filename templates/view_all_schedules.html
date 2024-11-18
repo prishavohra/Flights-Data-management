@@ -1,0 +1,29 @@
+{% extends "base_employee.html" %}
+{% block content %}
+<!-- Link to the CSS specific for All Schedules -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/allsched.css') }}">
+
+<h2>All Flight Schedules</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Flight Number</th>
+            <th>Crew Member</th>
+            <th>Shift Start Time</th>
+            <th>Shift End Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for schedule in schedules %}
+        <tr>
+            <td>{{ schedule[0] }}</td>
+            <td>{{ schedule[1] }} {{ schedule[2] }}</td>
+            <td>{{ schedule[3] }}</td>
+            <td>{{ schedule[4] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customer_dashboard.css') }}">
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="container">
+        <h1>Where Would You Like To Fly Today?</h1>
+        <div class="dialog-box">
+            <ul>
+                <li><a href="{{ url_for('flight_search') }}">Search Flights</a></li>
+                <li><a href="{{ url_for('view_current_flights') }}">View Booked Flights</a></li>
+                <li><a href="{{ url_for('view_travel_history') }}">View Travel History</a></li>
+                <li><a href="{{ url_for('about_customer') }}">About You</a></li>
+                <li><a href="{{ url_for('feedback') }}">Feedback</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

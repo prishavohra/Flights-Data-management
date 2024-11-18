@@ -1,0 +1,84 @@
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #ecf0f1; /* Light gray hover effect */
+    cursor: pointer;
+}
+
+td {
+    color: #34495e;
+}
+
+td:hover {
+    background-color: #f5f5f5; /* Light gray background for hover effect */
+}
+
+table {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    color: #34495e;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Optional: Header Styling */
+header {
+    padding: 15px 0;
+    background-color: #2c3e50;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e;
+    color: #b9cbff;
+}

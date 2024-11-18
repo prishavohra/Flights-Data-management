@@ -1,0 +1,89 @@
+/* Existing Styles for Background and Other Elements (same as previous) */
+
+/* About Employee Page Specific Styles */
+.employee-info {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners for a modern feel */
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    font-family: 'Arial', sans-serif;
+}
+
+.employee-info h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Styling for the list */
+.employee-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.employee-info ul li {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #34495e;
+}
+
+.employee-info ul li strong {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Optional: Styling the header (if needed) */
+header {
+    padding: 15px 0;
+    background-color: #2c3e50;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px; /* Rounded corners for a smoother button look */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e;
+    color: #b9cbff;
+}
+
+/* Add some hover effects for the About Employee list items */
+.employee-info ul li:hover {
+    background-color: #ecf0f1;
+    border-radius: 6px; /* Rounded hover effect */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    text-align: center;
+    color: #34495e;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

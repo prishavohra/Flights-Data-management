@@ -1,0 +1,27 @@
+{% extends "base_employee.html" %}
+{% block content %}
+<h2>Your Personal Schedule</h2>
+
+<div class="schedule-table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Schedule ID</th>
+                <th>Flight Number</th>
+                <th>Shift Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for schedule in schedules %}
+                <tr>
+                    <td>{{ schedule[0] }}</td>
+                    <td>{{ schedule[1] }}</td>
+                    <td>{{ schedule[2] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/personalsched.css') }}">
+{% endblock %}

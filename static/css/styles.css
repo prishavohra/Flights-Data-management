@@ -1,0 +1,96 @@
+/* Add space above the form and insert the logo */
+#logo {
+    width: 120px; /* Adjust the size of the logo */
+    height: 120px;
+    margin: 100px auto 20px; /* Add more space on top of the logo */
+    background-image: url('path_to_your_logo.png'); /* Provide the path to your image here */
+    background-size: contain; /* Makes sure the image fits within the element */
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the logo */
+    transition: transform 0.3s ease-in-out; /* Smooth animation for logo hover */
+}
+
+#logo:hover {
+    transform: scale(1.1); /* Enlarge logo on hover */
+}
+
+/* Style for the form */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto; /* Add space above the form */
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth form transition */
+}
+
+form:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Deepen shadow on hover */
+    transform: translateY(-5px); /* Lift form slightly */
+}
+
+/* Style for input fields */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #0066cc; /* Indigo color on focus */
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.5);
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: #0066cc; /* Indigo color when hovered */
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+/* Style for the submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066cc; /* Indigo color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #004999; /* Darker indigo on hover */
+    transform: scale(1.05); /* Slightly increase button size */
+}
+
+/* Button active state */
+button:active {
+    transform: scale(1); /* Reset button size when clicked */
+    box-shadow: 0 0 15px rgba(0, 102, 204, 0.3); /* Subtle glow when active */
+}
+
+/* Styling for the page title */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Add hover effect for the page title */
+h2:hover {
+    color: #0066cc; /* Change text color on hover */
+}

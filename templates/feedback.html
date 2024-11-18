@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/feedback.css') }}">
+
+    <h2>Provide Feedback</h2>
+    <form action="{{ url_for('feedback') }}" method="POST">
+        <div>
+            <label for="flight_id">Select Flight:</label>
+            <select name="flight_id" id="flight_id">
+                {% for flight in flights %}
+                    <option value="{{ flight[0] }}">{{ flight[1] }} ({{ flight[2] }} to {{ flight[3] }})</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label for="rating">Rating:</label>
+            <input type="number" name="rating" id="rating" min="1" max="5" required>
+        </div>
+        <div>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Feedback</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #b9cbff, #6488ac);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+table {
+    width: 80%;
+    margin: 20px;
+    border-collapse: collapse;
+    color: black; /* Text color inside table */
+    background-color: white; /* White background for the table */
+    border: 1px solid #4e5b76; /* Same border color as before */
+}
+
+table, th, td {
+    border: 1px solid #4e5b76; /* Border color for table and cells */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #4e5b76;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4e5b76;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d2a3d;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

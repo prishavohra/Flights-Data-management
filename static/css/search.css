@@ -1,0 +1,74 @@
+/* Background style for every page */
+body {
+    font-family: Arial, sans-serif; /* Normal font family */
+    background: linear-gradient(45deg, #b9cbff, #6488ac); /* Royal blue gradient */
+    background-size: 400% 400%; /* Makes the gradient big enough to move */
+    animation: gradientAnimation 5s ease infinite; /* Adds animation to the gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the form in search page */
+form {
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+/* Input fields and button styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #0066cc; /* Indigo color on focus */
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066cc; /* Indigo color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #004999; /* Darker indigo on hover */
+    transform: scale(1.05); /* Slightly increase button size */
+}
+
+h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #141313;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Add hover effect for h2 */
+h2:hover {
+    color: #0066cc; /* Change text color on hover */
+}

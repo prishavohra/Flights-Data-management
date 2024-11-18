@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <h2>Flight Results</h2>
+    
+    {% if flights %}
+    <table>
+        <thead>
+            <tr>
+                <th>Flight Number</th>
+                <th>Departure Airport</th>
+                <th>Arrival Airport</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+                <th>Price</th>
+                <th>Select Services</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for flight in flights %}
+            <tr>
+                <td>{{ flight.flight_number }}</td>
+                <td>{{ flight.departure_airport }}</td>
+                <td>{{ flight.arrival_airport }}</td>
+                <td>{{ flight.departure_time }}</td>
+                <td>{{ flight.arrival_time }}</td>
+                <td>₹{{ flight.price }}</td>
+                <td>
+                    <form method="POST" action="{{ url_for('select_services') }}">
+                        <input type="hidden" name="flight_id" value="{{ flight.flight_id }}">
+                        
+
+                        <label><input type="checkbox" name="services" value="1"> Baggage Handling (₹500)</label><br>
+                        <label><input type="checkbox" name="services" value="9"> Children Meal (₹300)</label><br>
+                        <label><input type="checkbox" name="services" value="5"> Extra Legroom (₹600)</label><br>
+                        <label><input type="checkbox" name="services" value="2"> In-flight Meal (₹400)</label><br>
+                        <label><input type="checkbox" name="services" value="4"> Lounge Access (₹800)</label><br>
+                        <label><input type="checkbox" name="services" value="10"> Pet Travel (₹700)</label><br>
+                        <label><input type="checkbox" name="services" value="3"> Priority Check-in (₹200)</label><br>
+                        <label><input type="checkbox" name="services" value="8"> Seat Upgrade (₹1000)</label><br>
+                        <label><input type="checkbox" name="services" value="6"> Travel Insurance (₹900)</label><br>
+                        <label><input type="checkbox" name="services" value="7"> WiFi Access (₹150)</label><br>
+                        <p>Flight Price: ₹{{ flight.price }}</p>  <!-- Debug: Display flight price -->
+
+                        <input type="submit" value="Select Services" class="btn btn-primary">
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No flights available for the selected cities.</p>
+    {% endif %}
+    
+    <a href="{{ url_for('flight_search') }}">Back to Search</a>
+</body>
+</html>
+{% endblock %}

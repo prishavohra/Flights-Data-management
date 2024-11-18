@@ -1,0 +1,15 @@
+{% extends "base_employee.html" %}
+{% block content %}
+<h2>Welcome to the Employee Dashboard</h2>
+<p>Here you can view all flight schedules, your personal schedule, and your employee details.</p>
+
+<div class="dashboard-options">
+    <ul>
+        <li><a href="{{ url_for('view_all_schedules') }}">View All Schedules</a></li>
+        <li><a href="{{ url_for('view_personal_schedule') }}">View Personal Schedule</a></li>
+        <li><a href="{{ url_for('about_employee') }}">About Employee</a></li>
+    </ul>
+</div>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/employee_dashboard.css') }}">
+{% endblock %}

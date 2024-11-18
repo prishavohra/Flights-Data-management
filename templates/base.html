@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <!-- Navbar stays at the top -->
+    <div class="navbar">
+        <a href="{{ url_for('customer_dashboard') }}" class="nav-link">Dashboard</a>
+        <a href="{{ url_for('flight_search') }}" class="nav-link">Search Flights</a>
+        <a href="{{ url_for('view_current_flights') }}" class="nav-link">View Booked Flights</a>
+        <a href="{{ url_for('view_travel_history') }}" class="nav-link">View Travel History</a>
+        <a href="{{ url_for('about_customer') }}" class="nav-link">About You</a>
+        <a href="{{ url_for('feedback') }}" class="nav-link">Feedback</a>
+        <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
+    </div>
+    
+    {% block content %} {% endblock %} <!-- Dynamic content will be injected here -->
+</body>
+</html>

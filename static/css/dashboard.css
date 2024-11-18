@@ -1,0 +1,52 @@
+/* Basic styling for body and page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #062a98; /* Royal Blue background */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps navbar on top */
+}
+
+/* Style for the links in the navbar */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effects for links */
+.nav-link:hover {
+    background-color: #003366; /* Darker shade of royal blue */
+    transform: scale(1.05); /* Slightly enlarge link on hover */
+}
+
+/* Optional: Styling for active links (if needed to highlight current page) */
+.nav-link.active {
+    background-color: #003366;
+}
+
+/* Add space between navbar and content */
+body {
+    padding-top: 50px; /* Adjust if needed to fit your content below navbar */
+}
+
+/* Optional: Styling for the page content */
+h1, h2, h3 {
+    margin-top: 20px;
+    text-align: center;
+}

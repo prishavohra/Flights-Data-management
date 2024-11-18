@@ -1,0 +1,85 @@
+/* General styles for table and button */
+.flight-results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.flight-results th, .flight-results td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.flight-results th {
+    background-color: #0066cc;
+    color: white;
+}
+
+.flight-results tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.flight-results tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for services section */
+.services {
+    margin-bottom: 20px;
+}
+
+.services input[type="checkbox"] {
+    margin: 5px;
+}
+
+.service-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066cc; /* Indigo color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #004999; /* Darker indigo on hover */
+    transform: scale(1.05); /* Slightly increase button size */
+}
+
+/* Style for the heading */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Add hover effect for h2 */
+h2:hover {
+    color: #0066cc; /* Change text color on hover */
+}
+
+/* Styling for the page background (already applied globally) */
+body {
+    font-family: Arial, sans-serif; /* Normal font family */
+    background: linear-gradient(45deg, #b9cbff, #6488ac); /* Royal blue gradient */
+    background-size: 400% 400%; /* Makes the gradient big enough to move */
+    animation: gradientAnimation 5s ease infinite; /* Adds animation to the gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 

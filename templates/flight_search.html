@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Flights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Search for Flights</h2>
+        <form action="/flight_search" method="POST" class="flight-search-form">
+            <div class="form-group">
+                <label for="departure_airport">Departure City Code:</label>
+                <input type="text" id="departure_airport" name="departure_airport" required>
+            </div>
+            <div class="form-group">
+                <label for="arrival_airport">Arrival City Code:</label>
+                <input type="text" id="arrival_airport" name="arrival_airport" required>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}
